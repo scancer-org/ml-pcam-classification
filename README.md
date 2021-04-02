@@ -1,2 +1,2 @@
-# data-eng-preparation
-Data Engineering &amp; Preparation on PCAM dataset
+# data-prep-and-model-train
+Data Engineering &amp; Preparation on PCAM dataset, alongside model training

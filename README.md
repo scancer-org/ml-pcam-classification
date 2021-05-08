@@ -6,9 +6,12 @@ detection. At its core is a collection of learnt detection models (in
 [TorchServe](https://pytorch.org/serve/)).
 
 This specific repository represents whole of the process of the ML modeling, including data preparation, of PCam Classification.
+
 More info about the dataset can be found here - https://github.com/basveeling/pcam
+
 Below you can find some information about how to train your own models using the infrastructre that we have created.
 Specifically, it contains:
+
 1. How to get the dataset
 2. How to create a new model for PCAM-Classificiation
 3. How to train a model
@@ -17,14 +20,20 @@ Specifically, it contains:
 
 ## 1. How to get the dataset
 In order to get the dataset, one can download it from the PCAM repo (URL above), and store it in its Google Drive.
+
 The dataset is ~7GB size, so it can definitely be downloaded "all at once".
-Another method, that one can think of, is downloading the dataset (which is in HDF5 format), processing it, and saving in a different way. This method is not relevant for this repo at the moment, but it just an offer of another way of handling this.
+
+Another method, that one can think of, is downloading the dataset (which is in HDF5 format), processing it, and saving in a different way. 
+This method is not relevant for this repo at the moment, but it just an offer of another way of handling this.
+
 Once downloaded, we stored the dataset in Google Drive, because the Colab notebooks are stored in Google as well. This makes the integration of dataset-code seamless easy.
 
 ## 2. How to create a new model for PCAM-Classification
 Within this repo, one can find a folder called "notebooks". This folder contains several notebooks that were used as part of the infrastructure creation, model training, and whole "go-to" package of modeling the PCAM-Classification problem.
+
 In order to create a new model, one can clone an existing notebook from the "notebooks" section (using the "Open in Colab" button, in each notebook).
 The notebooks are ordered chronologically, and with an appropriate name per each, so one can look for a relevant notebook, and clone it from there.
+
 In order to give one a sense, per May 8th, 2021, a relevant notebook can be `08_Fix_NaN_issue_in_division_cleaning_code_2021_05_01.ipynb`.
 
 Once a notebook exists, it is important to make sure that the Drive integration actually works. This can be achieved by the below commands, for example:

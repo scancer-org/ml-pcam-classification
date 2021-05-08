@@ -74,6 +74,8 @@ p = Dropout rate (for regularization purposes). Default value is 0.5.
 Once one has its model, it can start the training process.
 Note: In case weights and biases are not used nor installed, it is recommended to remove/comment any wandb-relevant code.
 
+Our model (from the models/cnn_model.py Script) is based on a [paper](http://cs230.stanford.edu/projects_winter_2019/reports/15813329.pdf) we have read from Stanford researches.
+
 ## 4. How to save a model (for integrating it using the "api" repo)
 Once the training has completed, you may want to save the model (for future purposes, e.g. hosting, batch prediction, real time prediction, etc.).
 For that, one can use the following short script:

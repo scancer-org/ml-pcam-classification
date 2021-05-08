@@ -29,6 +29,7 @@ In order to give one a sense, per May 8th, 2021, a relevant notebook can be `08_
 
 Once a notebook exists, it is important to make sure that the Drive integration actually works. This can be achieved by the below commands, for example:
 `drive.mount('/content/gdrive/')
+
 !ls gdrive/MyDrive/pcamv1`
 First command mounts the drive into colab (creates a pointer so the data can be accessed easily).
 Second command list the files in that particular folder (note: pcamv1 is the name we gave for the dataset, anyone else can have a different name).

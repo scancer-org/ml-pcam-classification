@@ -44,7 +44,7 @@ The notebook contains a sketch of the whole process of training. Specifically, t
 * Training + Evaluation Process
 * Model Saving
 
-With regards to the model, as can be seen in the code, the notebook as a whole is a wrapper, and it expects one main instantiation ->
+With regards to the model, as can be seen in the code, the notebook as a whole is a wrapper, and it expects one main instantiation:
 `model = ModelCNN()`
 ModelCNN is an instantiation of a script (`cnn_model.py`) which can be seen under `/src/models` 
 After all, the model inherets a `nn.Module` model (from PyTorch), so theoretically, one can create its own model and train it.
@@ -65,7 +65,7 @@ Note: In case weights and biases are not used nor installed, it is recommended t
 ## 4. How to save a model (for integrating it using the "api" repo)
 Once the training has completed, you may want to save the model (for future purposes, e.g. hosting, batch prediction, real time prediction, etc.).
 For that, one can use the following short script:
-`
+```
 # generate a dummy input, in this case the input represents the PCAM image size (3x96x96)
 example_input = torch.rand(1, 3, 96, 96).to(torch.device("cuda"))
 
@@ -78,7 +78,7 @@ traced_script_module.save(full_filename)
 
 # Test that loading works with no errors
 new_model = torch.jit.load(full_filename)
-`
+```
 
 ## Copyright and license
 

@@ -83,6 +83,8 @@ traced_script_module.save(full_filename)
 new_model = torch.jit.load(full_filename)
 ```
 
+Once the new trained model is saved, you may want to follow the "api" repository [documentation](https://github.com/scancer-org/api), in order to make predictions on a new dataset using it.
+
 ## Copyright and license
 
 Copyright (c) 2021 [Harish Narayanan](https://harishnarayanan.org) and
